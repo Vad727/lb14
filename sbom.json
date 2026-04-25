@@ -1,0 +1,191 @@
+{
+  "$schema": "http://cyclonedx.org/schema/bom-1.6.schema.json",
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.6",
+  "serialNumber": "urn:uuid:65dd3dc4-4a14-481e-b256-5c8035d087ca",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2026-04-22T18:48:21+00:00",
+    "tools": {
+      "components": [
+        {
+          "type": "application",
+          "manufacturer": {
+            "name": "Aqua Security Software Ltd."
+          },
+          "group": "aquasecurity",
+          "name": "trivy",
+          "version": "0.70.0"
+        }
+      ]
+    },
+    "component": {
+      "bom-ref": "d7ae821d-8976-4367-8fda-5d8985db4256",
+      "type": "application",
+      "name": "/src",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:SchemaVersion",
+          "value": "2"
+        }
+      ]
+    }
+  },
+  "components": [
+    {
+      "bom-ref": "12f9fe70-3d1f-4ead-98fd-690748620801",
+      "type": "application",
+      "name": "requirements.txt",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:Class",
+          "value": "lang-pkgs"
+        },
+        {
+          "name": "aquasecurity:trivy:Type",
+          "value": "pip"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:pypi/joblib@1.5.2",
+      "type": "library",
+      "name": "joblib",
+      "version": "1.5.2",
+      "purl": "pkg:pypi/joblib@1.5.2",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "pip"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:pypi/librosa@0.10.2.post1",
+      "type": "library",
+      "name": "librosa",
+      "version": "0.10.2.post1",
+      "purl": "pkg:pypi/librosa@0.10.2.post1",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "pip"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:pypi/matplotlib@3.10.5",
+      "type": "library",
+      "name": "matplotlib",
+      "version": "3.10.5",
+      "purl": "pkg:pypi/matplotlib@3.10.5",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "pip"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:pypi/numpy@1.26.4",
+      "type": "library",
+      "name": "numpy",
+      "version": "1.26.4",
+      "purl": "pkg:pypi/numpy@1.26.4",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "pip"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:pypi/pandas@2.3.2",
+      "type": "library",
+      "name": "pandas",
+      "version": "2.3.2",
+      "purl": "pkg:pypi/pandas@2.3.2",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "pip"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:pypi/scikit-learn@1.7.1",
+      "type": "library",
+      "name": "scikit-learn",
+      "version": "1.7.1",
+      "purl": "pkg:pypi/scikit-learn@1.7.1",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "pip"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:pypi/scipy@1.15.3",
+      "type": "library",
+      "name": "scipy",
+      "version": "1.15.3",
+      "purl": "pkg:pypi/scipy@1.15.3",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "pip"
+        }
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "ref": "12f9fe70-3d1f-4ead-98fd-690748620801",
+      "dependsOn": [
+        "pkg:pypi/joblib@1.5.2",
+        "pkg:pypi/librosa@0.10.2.post1",
+        "pkg:pypi/matplotlib@3.10.5",
+        "pkg:pypi/numpy@1.26.4",
+        "pkg:pypi/pandas@2.3.2",
+        "pkg:pypi/scikit-learn@1.7.1",
+        "pkg:pypi/scipy@1.15.3"
+      ]
+    },
+    {
+      "ref": "d7ae821d-8976-4367-8fda-5d8985db4256",
+      "dependsOn": [
+        "12f9fe70-3d1f-4ead-98fd-690748620801"
+      ]
+    },
+    {
+      "ref": "pkg:pypi/joblib@1.5.2",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/librosa@0.10.2.post1",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/matplotlib@3.10.5",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/numpy@1.26.4",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/pandas@2.3.2",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/scikit-learn@1.7.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:pypi/scipy@1.15.3",
+      "dependsOn": []
+    }
+  ],
+  "vulnerabilities": []
+}

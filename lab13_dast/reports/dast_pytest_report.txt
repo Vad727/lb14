@@ -1,0 +1,62 @@
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-7.4.4, pluggy-1.4.0 -- /usr/bin/python3
+cachedir: .pytest_cache
+rootdir: /mnt/c/Users/vad20/lb13/lab13_dast
+collecting ... collected 5 items
+
+test_dast_audio_inputs.py::test_valid_audio_files_are_processed[normal.wav] PASSED [ 20%]
+test_dast_audio_inputs.py::test_valid_audio_files_are_processed[short.wav] PASSED [ 40%]
+test_dast_audio_inputs.py::test_invalid_audio_files_are_handled[empty.wav] PASSED [ 60%]
+test_dast_audio_inputs.py::test_invalid_audio_files_are_handled[broken.wav] PASSED [ 80%]
+test_dast_audio_inputs.py::test_invalid_audio_files_are_handled[not_audio.wav] PASSED [100%]
+
+=============================== warnings summary ===============================
+test_dast_audio_inputs.py::test_valid_audio_files_are_processed[normal.wav]
+  /usr/lib/python3/dist-packages/sklearn/base.py:376: InconsistentVersionWarning: Trying to unpickle estimator StandardScaler from version 1.7.2 when using version 1.4.1.post1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+  https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+    warnings.warn(
+
+test_dast_audio_inputs.py::test_valid_audio_files_are_processed[normal.wav]
+  /usr/lib/python3/dist-packages/sklearn/base.py:376: InconsistentVersionWarning: Trying to unpickle estimator DecisionTreeClassifier from version 1.7.2 when using version 1.4.1.post1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+  https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+    warnings.warn(
+
+test_dast_audio_inputs.py::test_valid_audio_files_are_processed[normal.wav]
+  /usr/lib/python3/dist-packages/sklearn/base.py:376: InconsistentVersionWarning: Trying to unpickle estimator RandomForestClassifier from version 1.7.2 when using version 1.4.1.post1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+  https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+    warnings.warn(
+
+test_dast_audio_inputs.py::test_valid_audio_files_are_processed[normal.wav]
+  /home/vad/.local/lib/python3.12/site-packages/audioread/rawread.py:16: DeprecationWarning: 'aifc' is deprecated and slated for removal in Python 3.13
+    import aifc
+
+test_dast_audio_inputs.py::test_valid_audio_files_are_processed[normal.wav]
+  /home/vad/.local/lib/python3.12/site-packages/audioread/rawread.py:17: DeprecationWarning: 'audioop' is deprecated and slated for removal in Python 3.13
+    import audioop
+
+test_dast_audio_inputs.py::test_valid_audio_files_are_processed[normal.wav]
+  /home/vad/.local/lib/python3.12/site-packages/audioread/rawread.py:19: DeprecationWarning: 'sunau' is deprecated and slated for removal in Python 3.13
+    import sunau
+
+test_dast_audio_inputs.py::test_valid_audio_files_are_processed[normal.wav]
+test_dast_audio_inputs.py::test_valid_audio_files_are_processed[normal.wav]
+test_dast_audio_inputs.py::test_valid_audio_files_are_processed[short.wav]
+  /mnt/c/Users/vad20/lb13/gui_voice_classifier_app.py:255: UserWarning: With fmin=50.000, sr=16000 and frame_length=400, less than two periods of fmin fit into the frame, which can cause inaccurate pitch detection. Consider increasing to fmin=80.000 or frame_length=641.
+    f0 = librosa.yin(
+
+test_dast_audio_inputs.py::test_invalid_audio_files_are_handled[empty.wav]
+test_dast_audio_inputs.py::test_invalid_audio_files_are_handled[broken.wav]
+test_dast_audio_inputs.py::test_invalid_audio_files_are_handled[not_audio.wav]
+  /mnt/c/Users/vad20/lb13/gui_voice_classifier_app.py:214: UserWarning: PySoundFile failed. Trying audioread instead.
+    y, _ = librosa.load(str(audio_path), sr=sr, mono=True)
+
+test_dast_audio_inputs.py::test_invalid_audio_files_are_handled[empty.wav]
+test_dast_audio_inputs.py::test_invalid_audio_files_are_handled[broken.wav]
+test_dast_audio_inputs.py::test_invalid_audio_files_are_handled[not_audio.wav]
+  /home/vad/.local/lib/python3.12/site-packages/librosa/core/audio.py:184: FutureWarning: librosa.core.audio.__audioread_load
+  	Deprecated as of librosa version 0.10.0.
+  	It will be removed in librosa version 1.0.
+    y, sr_native = __audioread_load(path, offset, duration, dtype)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+======================= 5 passed, 15 warnings in 24.06s ========================

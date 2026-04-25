@@ -1,0 +1,27 @@
+version: "1.0"
+metadata:
+  project: "voice-classifier-vkr"
+  date: "2026-04-22"
+
+policy:
+  max_cvss_score: 7.0
+  auto_block_severities: ["CRITICAL"]
+  warn_severities: ["HIGH"]
+
+  banned_components:
+    - "Pillow@<10.3.0"
+    - "urllib3@<2.6.3"
+
+  banned_licenses:
+    - "GPL-3.0"
+    - "AGPL-3.0"
+
+  crypto_requirements:
+    banned_algorithms: ["MD5", "SHA1", "DES", "RC4"]
+    min_hash: "SHA256"
+    min_cipher: "AES-128-GCM"
+
+  remediation_deadline:
+    CRITICAL: 1
+    HIGH: 7
+    MEDIUM: 30
